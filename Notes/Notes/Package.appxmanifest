@@ -7,11 +7,11 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="8c6cb53f-2b5f-4b51-8a8f-d58ba7a793e5"
+    Name="8de48fe1-2f44-4cac-ae05-2ef75153d7b2"
     Publisher="CN=Damian Curran"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="8c6cb53f-2b5f-4b51-8a8f-d58ba7a793e5" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="8de48fe1-2f44-4cac-ae05-2ef75153d7b2" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>Notes</DisplayName>
