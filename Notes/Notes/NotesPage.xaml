@@ -33,6 +33,7 @@
             <TextBox  Name="txt2"
               Text="{x:Bind NoteHandler.SelectedNote.NoteDes, Mode=TwoWay, FallbackValue=''}" 
               Margin="5" />
+            <Button Content="Delete" Click="DeleteBtn" Margin="5" />
         </StackPanel>
     </Grid>
 </Page>

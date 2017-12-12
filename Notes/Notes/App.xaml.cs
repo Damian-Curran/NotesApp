@@ -33,7 +33,7 @@ namespace Notes
             this.Suspending += OnSuspending;
         }
 
-        public static MobileServiceClient MobileService = new MobileServiceClient("http://NoteAppAzure.azurewebsites.net");
+        public static MobileServiceClient MobileService = new MobileServiceClient("https://NoteAppAzure.azurewebsites.net");
 
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points

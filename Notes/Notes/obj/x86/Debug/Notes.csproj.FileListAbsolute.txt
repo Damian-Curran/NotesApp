@@ -208,8 +208,8 @@ C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\obj\x86
 C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\obj\x86\Debug\NotesPage.g.cs
 C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\obj\x86\Debug\NotesPage.xaml
 C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\obj\x86\Debug\NotesPage.xbf
-C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\obj\x86\Debug\ViewNote.xaml
-C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\obj\x86\Debug\ViewNote.xbf
-C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\bin\x86\Debug\ViewNote.xbf
-C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\obj\x86\Debug\ViewNote.g.i.cs
-C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\obj\x86\Debug\ViewNote.g.cs
+C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\bin\x86\Debug\AddNote.xbf
+C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\obj\x86\Debug\AddNote.g.i.cs
+C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\obj\x86\Debug\AddNote.g.cs
+C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\obj\x86\Debug\AddNote.xaml
+C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\obj\x86\Debug\AddNote.xbf

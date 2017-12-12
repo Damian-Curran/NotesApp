@@ -29,6 +29,7 @@ namespace Notes
             this.InitializeComponent();
             NoteHandler = new NoteHandlerViewModel();
             NoteHandler.NoteHandlerViewModel1("College");
+            this.MainFrame.Navigate(typeof(NotesPage));
         }
 
         private void BtnClick(object sender, RoutedEventArgs e)
@@ -36,7 +37,7 @@ namespace Notes
             this.MainFrame.Navigate(typeof(NotesPage));
         }
 
-        private void BtnClick2(object sender, RoutedEventArgs e)
+        private void BtnClick1(object sender, RoutedEventArgs e)
         {
             this.MainFrame.Navigate(typeof(Form));
         }

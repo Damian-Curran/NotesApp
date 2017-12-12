@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
-using ViewModels;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -21,25 +20,11 @@ namespace Notes
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Form : Page
+    public sealed partial class AddNote : Page
     {
-        public Form()
+        public AddNote()
         {
             this.InitializeComponent();
-            NoteHandler = new NoteHandlerViewModel();
-            NoteHandler.NoteHandlerViewModel1("College");
         }
-
-        public void Btn(object sender, RoutedEventArgs e)
-        {
-            NoteHandler.Add();
-        }
-
-        protected override void OnNavigatedTo(NavigationEventArgs e)
-        {
-            NoteHandler.Add();
-        }
-
-        public NoteHandlerViewModel NoteHandler { get; set; }
     }
 }

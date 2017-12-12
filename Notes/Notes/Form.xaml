@@ -21,13 +21,12 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Column="2" Grid.Row="2" Orientation="Vertical">
-            <TextBox 
+            <TextBox
               Text="{x:Bind NoteHandler.SelectedNote.NoteName, Mode=TwoWay, FallbackValue=''}" 
               Margin="5" />
             <TextBox 
               Text="{x:Bind NoteHandler.SelectedNote.NoteDes, Mode=TwoWay, FallbackValue=''}" 
               Margin="5" />
-            <Button Content="Add" Click="{x:Bind  NoteHandler.Add}" Margin="5"/>
         </StackPanel>
     </Grid>
 </Page>

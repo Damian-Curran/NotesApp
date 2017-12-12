@@ -15,13 +15,13 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel x:ConnectionId='2' Name="stack1" Grid.Column="0" Orientation="Vertical" Visibility="Visible">
-            <ListView x:ConnectionId='6'  x:Name="MainList" IsItemClickEnabled="True"                               
+            <ListView x:ConnectionId='7'  x:Name="MainList" IsItemClickEnabled="True"                               
                                                                      
                                                                               
               MinWidth="250" Margin="5">
                 <ListView.ItemTemplate>
                     <DataTemplate                                       >
-                        <TextBlock x:ConnectionId='7'                                       />
+                        <TextBlock x:ConnectionId='8'                                       />
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
@@ -33,6 +33,7 @@
             <TextBox x:ConnectionId='5'  Name="txt2"
                                                                                               
               Margin="5" />
+            <Button x:ConnectionId='6' Content="Delete"                   Margin="5" />
         </StackPanel>
     </Grid>
 </Page>

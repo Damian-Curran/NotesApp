@@ -39,6 +39,13 @@ namespace Notes
             stack2.Visibility = Visibility.Visible;
         }
 
+        public void DeleteBtn(object sender, RoutedEventArgs e)
+        {
+            NoteHandler.Delete();
+            stack1.Visibility = Visibility.Visible;
+            stack2.Visibility = Visibility.Collapsed;
+        }
+
         public NoteHandlerViewModel NoteHandler { get; set; }
     }
 }

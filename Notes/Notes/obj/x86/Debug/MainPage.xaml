@@ -15,10 +15,9 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Column="0" Orientation="Vertical">
-            <Button x:ConnectionId='1' Content="NotesPages"                  Margin="5" />
-            <Button x:ConnectionId='2' Content="Form"                   Margin="5" />
-            <Button x:ConnectionId='3' Content="ViewItem"                   Margin="5" />
-            <Frame x:ConnectionId='4' x:Name="MainFrame" Margin="0,35,0,0">
+            <Button x:ConnectionId='1' Content="Home"                  Margin="5" />
+            <Button x:ConnectionId='2' Content="Add"                   Margin="5" />
+            <Frame x:ConnectionId='3' x:Name="MainFrame" Margin="0,35,0,0">
             </Frame>
         
         </StackPanel>

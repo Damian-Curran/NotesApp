@@ -18,6 +18,7 @@
       <RootMethod Name="SetRow" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Notes.AddNote" />
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
     </RootType>
@@ -35,16 +36,16 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Name" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Button">
-      <RootProperty Name="Content" />
-      <RootProperty Name="Margin" />
-      <RootEvent Name="Click" />
-    </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
       <RootProperty Name="Mode" />
       <RootProperty Name="FallbackValue" />
     </RootType>
     <RootType FullName="Notes.Form" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Margin" />
+      <RootEvent Name="Click" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Frame">
       <RootProperty Name="Margin" />
     </RootType>
@@ -65,6 +66,5 @@
       <RootProperty Name="Text" />
     </RootType>
     <RootType FullName="Notes.NotesPage" />
-    <RootType FullName="Notes.ViewNote" />
   </Roots.RootTypes>
 </Roots>

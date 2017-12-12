@@ -17,7 +17,14 @@ namespace ViewModels
         {
             notehandler = new NoteHandler();
             _SelectedIndex = -1;
-            await notehandler.NoteHandler1(name);
+            try
+            {
+                await notehandler.NoteHandler1(name);
+            }
+            catch(Exception e)
+            {
+                System.Diagnostics.Debug.WriteLine(e);
+            }
             // Load the database
             if (notehandler.Notes != null)
             {

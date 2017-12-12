@@ -22,10 +22,13 @@ namespace Models
 
         public void Add(Note note)
         {
-            if (!Notes.Contains(note))
+            if (Notes != null)
             {
-                Notes.Add(note);
-                NoteService.Write(note);
+                if (!Notes.Contains(note))
+                {
+                    Notes.Add(note);
+                    NoteService.Write(note);
+                }
             }
         }
 
