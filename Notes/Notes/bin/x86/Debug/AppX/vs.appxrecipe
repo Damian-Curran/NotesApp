@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-12T04:09:57.480</Modified>
+      <Modified>2017-12-12T11:22:09.470</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\bin\x86\Debug\Notes.exe">
       <PackagePath>entrypoint\Notes.exe</PackagePath>
-      <Modified>2017-12-12T04:09:57.180</Modified>
+      <Modified>2017-12-12T11:22:08.188</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Damian Curran\.nuget\packages\Microsoft.Azure.Mobile.Client\3.0.1\lib\netcore45\Microsoft.WindowsAzure.Mobile.Ext.dll">
       <PackagePath>Microsoft.WindowsAzure.Mobile.Ext.dll</PackagePath>
@@ -508,7 +508,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\bin\x86\Debug\Notes.xr.xml">
       <PackagePath>Notes.xr.xml</PackagePath>
-      <Modified>2017-12-12T02:49:03.615</Modified>
+      <Modified>2017-12-12T11:18:43.883</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -517,11 +517,11 @@
     <AppxPackagedFile Include="C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-12T04:03:17.927</Modified>
+      <Modified>2017-12-12T11:22:09.253</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\bin\x86\Debug\Core\Notes.exe">
       <PackagePath>Notes.exe</PackagePath>
-      <Modified>2017-12-12T04:09:57.478</Modified>
+      <Modified>2017-12-12T11:22:09.468</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

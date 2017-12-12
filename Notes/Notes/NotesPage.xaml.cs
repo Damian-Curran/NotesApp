@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using ViewModels;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -12,38 +14,29 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using ViewModels;
 
-
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Notes
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class NotesPage : Page
     {
-        public MainPage()
+        public NotesPage()
         {
             this.InitializeComponent();
             NoteHandler = new NoteHandlerViewModel();
             NoteHandler.NoteHandlerViewModel1("College");
         }
 
-        private void BtnClick(object sender, RoutedEventArgs e)
+        private void ListView_ItemClick(object sender, ItemClickEventArgs e)
         {
-            this.MainFrame.Navigate(typeof(NotesPage));
-        }
+            var hello = (NoteViewModel)e.ClickedItem;
 
-        private void BtnClick2(object sender, RoutedEventArgs e)
-        {
-            this.MainFrame.Navigate(typeof(Form));
-        }
-
-        private void BtnClick3(object sender, RoutedEventArgs e)
-        {
-            this.MainFrame.Navigate(typeof(ViewNote));
+            stack1.Visibility = Visibility.Collapsed;
+            stack2.Visibility = Visibility.Visible;
         }
 
         public NoteHandlerViewModel NoteHandler { get; set; }

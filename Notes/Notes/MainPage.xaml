@@ -15,27 +15,12 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Column="0" Orientation="Vertical">
-            <ListView  x:Name="MainList" 
-              ItemsSource="{x:Bind NoteHandler.Notes, Mode=OneWay}"  
-              SelectedIndex="{x:Bind NoteHandler.SelectedIndex, Mode=TwoWay}" 
-              MinWidth="250" Margin="5">
-                <ListView.ItemTemplate>
-                    <DataTemplate x:DataType="viewModels:NoteViewModel" >
-                        <TextBlock Text="{x:Bind NoteName, Mode=OneWay}" />
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-            <Button Content="Add" Click="{x:Bind  NoteHandler.Add}" Margin="5"/>
-        </StackPanel>
-
-        <StackPanel Grid.Column="2" Orientation="Vertical">
-            <TextBox 
-              Text="{x:Bind NoteHandler.SelectedNote.NoteName, Mode=TwoWay, FallbackValue=''}" 
-              Margin="5" />
-            <TextBox 
-              Text="{x:Bind NoteHandler.SelectedNote.NoteDes, Mode=TwoWay, FallbackValue=''}" 
-              Margin="5" />
-            <Button Content="Delete" Click="{x:Bind NoteHandler.Delete}" Margin="5" />
+            <Button Content="NotesPages" Click="BtnClick" Margin="5" />
+            <Button Content="Form" Click="BtnClick2" Margin="5" />
+            <Button Content="ViewItem" Click="BtnClick3" Margin="5" />
+            <Frame x:Name="MainFrame" Margin="0,35,0,0">
+            </Frame>
+        
         </StackPanel>
     </Grid>
 </Page>

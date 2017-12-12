@@ -40,7 +40,7 @@ namespace Models
 
         public void Update(Note note)
         {
-            NoteService.Update(note);
+            NoteService.Write(note);
         }
     }
 }

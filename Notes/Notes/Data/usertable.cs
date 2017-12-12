@@ -67,13 +67,50 @@ namespace Data
             Note obj = new Note();
             obj.NoteName = note.NoteName;
             obj.NoteDes = note.NoteDes;
+            obj.id = note.NoteName;
+            
+            var dupCount = 0;
+
+            NoteService data = new NoteService();
+            List<Note> listt = await data.GetNotes();
 
             IMobileServiceTable<Note> userTableObj = App.MobileService.GetTable<Note>();
             if (obj.NoteName != null && obj.NoteDes != null)
             {
-                await userTableObj.InsertAsync(obj);
-                MessageDialog msgDialog = new MessageDialog("Data Inserted!!!");
-                await msgDialog.ShowAsync();
+                if (obj.NoteDes != "" && obj.NoteName != "")
+                {
+                    foreach (var n in listt)
+                    {
+                        if(note.NoteName == n.NoteName && note.NoteDes != n.NoteDes)
+                        {
+                            dupCount += 1;
+                        }
+                        
+                    }
+
+                    if(dupCount == 1)
+                    {
+                        await userTableObj.UpdateAsync(obj);
+                        MessageDialog msgDialog = new MessageDialog("Data Updated!!!");
+                        await msgDialog.ShowAsync();
+                    }
+
+                    if (dupCount == 0)
+                    {
+                        try
+                        {
+                            await userTableObj.InsertAsync(obj);
+                            MessageDialog msgDialog = new MessageDialog("Data Inserted!!!");
+                            await msgDialog.ShowAsync();
+                        }
+
+                        catch (Exception)
+                        {
+                            MessageDialog msgDialog = new MessageDialog("Use a unique Note Name");
+                            await msgDialog.ShowAsync();
+                        }
+                    }
+                }
             }
         }
 
@@ -82,26 +119,12 @@ namespace Data
             Note obj = new Note();
             obj.NoteName = note.NoteName;
             obj.NoteDes = note.NoteDes;
-            obj.id = note.id;
+            obj.id = note.NoteName;
 
             IMobileServiceTable<Note> userTableObj = App.MobileService.GetTable<Note>();
 
             await userTableObj.DeleteAsync(obj);
             MessageDialog msgDialog = new MessageDialog("Data Deleted!!!");
-            await msgDialog.ShowAsync();
-        }
-
-        public static async void Update(Note note)
-        {
-            Note obj = new Note();
-            obj.NoteName = note.NoteName;
-            obj.NoteDes = note.NoteDes;
-            obj.id = note.id;
-
-            IMobileServiceTable<Note> userTableObj = App.MobileService.GetTable<Note>();
-
-            await userTableObj.UpdateAsync(obj);
-            MessageDialog msgDialog = new MessageDialog("Data Updated!!!");
             await msgDialog.ShowAsync();
         }
     }
