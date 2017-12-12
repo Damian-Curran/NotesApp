@@ -8,7 +8,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="RoyalBlue">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="Auto"/>
@@ -27,7 +27,7 @@
             </ListView>
         </StackPanel>
         <StackPanel x:ConnectionId='3' Name="stack2" Visibility="Collapsed">
-            <TextBox x:ConnectionId='4' Name="txt1"
+            <TextBox x:ConnectionId='4' Name="txt1" IsReadOnly="True" BorderThickness="0"
                                                                                                
               Margin="5" />
             <TextBox x:ConnectionId='5'  Name="txt2"

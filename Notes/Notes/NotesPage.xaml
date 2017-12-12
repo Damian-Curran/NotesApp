@@ -8,7 +8,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="RoyalBlue">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="Auto"/>
@@ -27,7 +27,7 @@
             </ListView>
         </StackPanel>
         <StackPanel Name="stack2" Visibility="Collapsed">
-            <TextBox Name="txt1"
+            <TextBox Name="txt1" IsReadOnly="True" BorderThickness="0"
               Text="{x:Bind NoteHandler.SelectedNote.NoteName, Mode=TwoWay, FallbackValue=''}" 
               Margin="5" />
             <TextBox  Name="txt2"

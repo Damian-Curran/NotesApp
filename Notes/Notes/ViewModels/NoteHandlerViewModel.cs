@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.ComponentModel;
 using System.Collections.ObjectModel;
 using Models;
+using Windows.UI.Popups;
 
 namespace ViewModels
 {
@@ -23,7 +24,8 @@ namespace ViewModels
             }
             catch(Exception e)
             {
-                System.Diagnostics.Debug.WriteLine(e);
+                MessageDialog msgDialog = new MessageDialog("Internet Conncection Required");
+                await msgDialog.ShowAsync();
             }
             // Load the database
             if (notehandler.Notes != null)
