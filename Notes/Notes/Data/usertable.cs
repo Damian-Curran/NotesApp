@@ -90,5 +90,19 @@ namespace Data
             MessageDialog msgDialog = new MessageDialog("Data Deleted!!!");
             await msgDialog.ShowAsync();
         }
+
+        public static async void Update(Note note)
+        {
+            Note obj = new Note();
+            obj.NoteName = note.NoteName;
+            obj.NoteDes = note.NoteDes;
+            obj.id = note.id;
+
+            IMobileServiceTable<Note> userTableObj = App.MobileService.GetTable<Note>();
+
+            await userTableObj.UpdateAsync(obj);
+            MessageDialog msgDialog = new MessageDialog("Data Updated!!!");
+            await msgDialog.ShowAsync();
+        }
     }
 }

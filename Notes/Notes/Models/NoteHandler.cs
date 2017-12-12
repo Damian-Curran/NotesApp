@@ -20,27 +20,27 @@ namespace Models
             return;
         }
 
-        public void Add(Note person)
+        public void Add(Note note)
         {
-            if (!Notes.Contains(person))
+            if (!Notes.Contains(note))
             {
-                Notes.Add(person);
-                NoteService.Write(person);
+                Notes.Add(note);
+                NoteService.Write(note);
             }
         }
 
-        public void Delete(Note person)
+        public void Delete(Note note)
         {
-            if (Notes.Contains(person))
+            if (Notes.Contains(note))
             {
-                Notes.Remove(person);
-                NoteService.Delete(person);
+                Notes.Remove(note);
+                NoteService.Delete(note);
             }
         }
 
-        public void Update(Note person)
+        public void Update(Note note)
         {
-            NoteService.Write(person);
+            NoteService.Update(note);
         }
     }
 }
