@@ -182,6 +182,7 @@ namespace Notes.Notes_XamlTypeInfo
         }
 
         private object Activate_0_MainPage() { return new global::Notes.MainPage(); }
+        private object Activate_3_NoteHandlerViewModel() { return new global::ViewModels.NoteHandlerViewModel(); }
         private object Activate_4_NotificationBase() { return new global::ViewModels.NotificationBase(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)

@@ -12,10 +12,12 @@ namespace Models
         public List<Note> Notes { get; set; }
         public String NoteName { get; set; }
 
-        public NoteHandler(String databaseName)
+        public async Task NoteHandler1(string name)
         {
-            NoteName = databaseName;
-            Notes = NoteService.GetNotes();
+            NoteService reff = new NoteService();
+            Notes = await reff.GetNotes();
+
+            return;
         }
 
         public void Add(Note person)

@@ -13,16 +13,20 @@ namespace ViewModels
     {
         NoteHandler notehandler;
 
-        public NoteHandlerViewModel(String name)
+        public async void NoteHandlerViewModel1(String name)
         {
-            notehandler = new NoteHandler(name);
+            notehandler = new NoteHandler();
             _SelectedIndex = -1;
+            await notehandler.NoteHandler1(name);
             // Load the database
-            foreach (var note in notehandler.Notes)
+            if (notehandler.Notes != null)
             {
-                var newNote = new NoteViewModel(note);
-                newNote.PropertyChanged += Notes_OnNotifyPropertyChanged;
-                _Notes.Add(newNote);
+                foreach (var note in notehandler.Notes)
+                {
+                    var newNote = new NoteViewModel(note);
+                    newNote.PropertyChanged += Notes_OnNotifyPropertyChanged;
+                    _Notes.Add(newNote);
+                }
             }
         }
 

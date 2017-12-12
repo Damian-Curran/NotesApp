@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using ViewModels;
 
+
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
 namespace Notes
@@ -26,7 +27,8 @@ namespace Notes
         public MainPage()
         {
             this.InitializeComponent();
-            NoteHandler = new NoteHandlerViewModel("College");
+            NoteHandler = new NoteHandlerViewModel();
+            NoteHandler.NoteHandlerViewModel1("College");
         }
 
         public NoteHandlerViewModel NoteHandler { get; set; }
