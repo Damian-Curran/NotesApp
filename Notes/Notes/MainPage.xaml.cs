@@ -41,11 +41,6 @@ namespace Notes
             this.MainFrame.Navigate(typeof(Form));
         }
 
-        private void BtnClick3(object sender, RoutedEventArgs e)
-        {
-            this.MainFrame.Navigate(typeof(ViewNote));
-        }
-
         public NoteHandlerViewModel NoteHandler { get; set; }
     }
 }
