@@ -8,7 +8,7 @@ I will update this README once it has done so.
 ## Functionality
 This app allows the user to Create/Edit/Delete notes.
 
-All notes are stored in a Azure database table called Notes.
+All notes are stored in an Azure database table called Notes.
 
 ## Cloning Repo
 To clone this repo open your cmd and type: git clone https://github.com/Damian404/NotesApp.git
