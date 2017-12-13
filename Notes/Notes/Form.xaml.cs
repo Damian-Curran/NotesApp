@@ -6,6 +6,8 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using ViewModels;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Graphics.Display;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -38,6 +40,12 @@ namespace Notes
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             NoteHandler.Add();
+
+            var bounds = ApplicationView.GetForCurrentView().VisibleBounds;
+            var scaleFactor = DisplayInformation.GetForCurrentView().RawPixelsPerViewPixel;
+            var size = new Size(bounds.Width * scaleFactor, bounds.Height * scaleFactor);
+
+            des.MaxHeight = size.Height - 100;
         }
 
         public NoteHandlerViewModel NoteHandler { get; set; }

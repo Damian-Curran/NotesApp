@@ -42,11 +42,6 @@ namespace Notes
             this.MainFrame.Navigate(typeof(Form));
         }
 
-        public void ChangeText(string name)
-        {
-            this.Title.Text = "reeee";
-        }
-
         public NoteHandlerViewModel NoteHandler { get; set; }
     }
 }

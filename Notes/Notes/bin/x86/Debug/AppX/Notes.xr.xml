@@ -16,6 +16,8 @@
       <RootMethod Name="SetColumn" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
+      <RootMethod Name="GetColumnSpan" />
+      <RootMethod Name="SetColumnSpan" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Notes.AddNote" />
@@ -31,25 +33,32 @@
       <RootProperty Name="Background" />
       <RootProperty Name="Name" />
       <RootProperty Name="Visibility" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="MaxLength" />
       <RootProperty Name="Text" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Name" />
-      <RootProperty Name="Background" />
-      <RootProperty Name="IsReadOnly" />
-      <RootProperty Name="Foreground" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="IsReadOnly" />
       <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootMethod Name="GetVerticalScrollMode" />
+      <RootMethod Name="SetVerticalScrollMode" />
+      <RootMethod Name="GetVerticalScrollBarVisibility" />
+      <RootMethod Name="SetVerticalScrollBarVisibility" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
       <RootProperty Name="Mode" />
       <RootProperty Name="FallbackValue" />
     </RootType>
     <RootType FullName="Notes.Form" />
-    <RootType FullName="Windows.UI.Xaml.Controls.Frame">
-      <RootProperty Name="Margin" />
-    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Frame" />
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />
       <RootProperty Name="Margin" />

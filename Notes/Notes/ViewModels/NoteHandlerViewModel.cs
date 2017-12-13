@@ -25,7 +25,7 @@ namespace ViewModels
             catch(Exception e)
             {
                 MessageDialog msgDialog = new MessageDialog("Internet Conncection Required");
-                await msgDialog.ShowAsync();
+                msgDialog.ShowAsync();
             }
             // Load the database
             if (notehandler.Notes != null)

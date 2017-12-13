@@ -9,12 +9,14 @@
     mc:Ignorable="d">
 
     <Grid Background="RoyalBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <StackPanel Name="stack1" Grid.Column="0" Orientation="Vertical" Visibility="Visible">
+        <StackPanel Name="stack1" Grid.Column="0" Visibility="Visible">
             <ListView  x:Name="MainList" IsItemClickEnabled="True" ItemClick="ListView_ItemClick"
               ItemsSource="{x:Bind NoteHandler.Notes, Mode=OneWay}"  
               SelectedIndex="{x:Bind NoteHandler.SelectedIndex, Mode=TwoWay}" 
@@ -26,13 +28,13 @@
                 </ListView.ItemTemplate>
             </ListView>
         </StackPanel>
-        <StackPanel Name="stack2" Visibility="Collapsed">
-            <TextBox Name="txt1" IsReadOnly="True" BorderThickness="0"
+        <StackPanel Name="stack2" Visibility="Collapsed" Grid.Column="0" Grid.Row="0" Margin="10,10,10,10">
+            <TextBox Name="txt1" IsReadOnly="True" BorderThickness="0" Visibility="Collapsed"
               Text="{x:Bind NoteHandler.SelectedNote.NoteName, Mode=TwoWay, FallbackValue=''}" 
               Margin="5" />
-            <TextBox  Name="txt2"
+            <TextBox  Name="txt2" HorizontalAlignment="Stretch" BorderBrush="Black" TextWrapping="Wrap" ScrollViewer.VerticalScrollMode="Enabled" ScrollViewer.VerticalScrollBarVisibility="Visible"
               Text="{x:Bind NoteHandler.SelectedNote.NoteDes, Mode=TwoWay, FallbackValue=''}" 
-              Margin="5" />
+               />
             <Button Content="Delete" Click="DeleteBtn" Margin="5" />
         </StackPanel>
     </Grid>

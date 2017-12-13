@@ -6,7 +6,9 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using ViewModels;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Graphics.Display;
 using Windows.UI.Popups;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -37,6 +39,12 @@ namespace Notes
 
             stack1.Visibility = Visibility.Collapsed;
             stack2.Visibility = Visibility.Visible;
+
+            var bounds = ApplicationView.GetForCurrentView().VisibleBounds;
+            var scaleFactor = DisplayInformation.GetForCurrentView().RawPixelsPerViewPixel;
+            var size = new Size(bounds.Width * scaleFactor, bounds.Height * scaleFactor);
+            
+            txt2.MaxHeight = size.Height - 100;
         }
 
         public void DeleteBtn(object sender, RoutedEventArgs e)
