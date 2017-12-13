@@ -5,4 +5,7 @@
     <UseEmulator>false</UseEmulator>
     <UseSimulator>false</UseSimulator>
   </PropertyGroup>
+  <PropertyGroup>
+    <AppxShowAllApps>False</AppxShowAllApps>
+  </PropertyGroup>
 </Project>

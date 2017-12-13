@@ -17,7 +17,7 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Name="stack1" Grid.Column="0" Visibility="Visible">
-            <ListView  x:Name="MainList" IsItemClickEnabled="True" ItemClick="ListView_ItemClick"
+            <ListView  x:Name="MainList" IsItemClickEnabled="True" ItemClick="ListView_ItemClick" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollMode="Enabled"
               ItemsSource="{x:Bind NoteHandler.Notes, Mode=OneWay}"  
               SelectedIndex="{x:Bind NoteHandler.SelectedIndex, Mode=TwoWay}" 
               MinWidth="250" Margin="5">

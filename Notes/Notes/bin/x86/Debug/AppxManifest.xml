@@ -7,10 +7,10 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="8de48fe1-2f44-4cac-ae05-2ef75153d7b2" Publisher="CN=Damian Curran" Version="1.0.0.0" ProcessorArchitecture="x86" />
+  <Identity Name="58362DamianCurran.OnlineNotes" Publisher="CN=13E43DFA-5E1D-447E-84CB-0ACE7287F4F8" Version="1.1.0.0" ProcessorArchitecture="x86" />
   <mp:PhoneIdentity PhoneProductId="8de48fe1-2f44-4cac-ae05-2ef75153d7b2" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>Notes</DisplayName>
+    <DisplayName>OnlineNotes</DisplayName>
     <PublisherDisplayName>Damian Curran</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -22,8 +22,8 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="Notes.exe" EntryPoint="Notes.App">
-      <uap:VisualElements DisplayName="Notes" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="Notes" BackgroundColor="transparent">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" />
+      <uap:VisualElements DisplayName="OnlineNotes" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="Notes" BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"></uap:DefaultTile>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>
     </Application>

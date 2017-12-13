@@ -19,19 +19,15 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Column="0" Grid.Row="0" Orientation="Vertical" Background="Black">
-            <Button x:ConnectionId='4' Content="Home"                  Margin="5" Background="BlueViolet"/>
-        </StackPanel>
-
-        <StackPanel Grid.Column="1" Grid.Row="0" Orientation="Vertical" Background="Black">
-            <TextBox x:ConnectionId='3' Name="Title" Text="asd" Background="Blue" IsReadOnly="True" Foreground="Black" HorizontalAlignment="Center"></TextBox>
+            <Button x:ConnectionId='3' Content="Home"                  Margin="5" Background="BlueViolet"/>
         </StackPanel>
 
         <StackPanel Grid.Column="2" Grid.Row="0" Orientation="Vertical" Background="Black">
             <Button x:ConnectionId='2' Content="Add"                   Margin="5" HorizontalAlignment="Right" Background="BlueViolet"/>
         </StackPanel>
 
-        <StackPanel Grid.Column="0" Grid.Row="1" Orientation="Vertical" >
-            <Frame x:ConnectionId='1' x:Name="MainFrame" Margin="0,35,0,0">
+        <StackPanel Grid.ColumnSpan="2" Grid.Row="1" Orientation="Vertical" >
+            <Frame x:ConnectionId='1' x:Name="MainFrame">
             </Frame>
         </StackPanel>
     </Grid>

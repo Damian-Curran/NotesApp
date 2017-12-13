@@ -24,6 +24,8 @@ namespace Notes
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
+    /// 
+    
     public sealed partial class NotesPage : Page
     {
         public NotesPage()
@@ -31,6 +33,10 @@ namespace Notes
             this.InitializeComponent();
             NoteHandler = new NoteHandlerViewModel();
             NoteHandler.NoteHandlerViewModel1("College");
+
+            Size size = new Size();
+            size = ScreenSize();
+            MainList.MaxHeight = size.Height - 100;
         }
 
         private void ListView_ItemClick(object sender, ItemClickEventArgs e)
@@ -40,9 +46,8 @@ namespace Notes
             stack1.Visibility = Visibility.Collapsed;
             stack2.Visibility = Visibility.Visible;
 
-            var bounds = ApplicationView.GetForCurrentView().VisibleBounds;
-            var scaleFactor = DisplayInformation.GetForCurrentView().RawPixelsPerViewPixel;
-            var size = new Size(bounds.Width * scaleFactor, bounds.Height * scaleFactor);
+            Size size = new Size();
+            size = ScreenSize();
             
             txt2.MaxHeight = size.Height - 100;
         }
@@ -52,6 +57,15 @@ namespace Notes
             NoteHandler.Delete();
             stack1.Visibility = Visibility.Visible;
             stack2.Visibility = Visibility.Collapsed;
+        }
+
+        public Size ScreenSize()
+        {
+            var bounds = ApplicationView.GetForCurrentView().VisibleBounds;
+            var scaleFactor = DisplayInformation.GetForCurrentView().RawPixelsPerViewPixel;
+            var size = new Size(bounds.Width * scaleFactor, bounds.Height * scaleFactor);
+
+            return size;
         }
 
         public NoteHandlerViewModel NoteHandler { get; set; }

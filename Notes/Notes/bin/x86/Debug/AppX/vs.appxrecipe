@@ -9,32 +9,32 @@
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>8de48fe1-2f44-4cac-ae05-2ef75153d7b2</PackageIdentityName>
-    <PackageIdentityPublisher>CN=Damian Curran</PackageIdentityPublisher>
+    <PackageIdentityPublisher>CN=13E43DFA-5E1D-447E-84CB-0ACE7287F4F8</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>838269E25951EC340F0474E169CF9D83E47C2CE8DCC84F8B611DF1170CB88B89</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>8de48fe1-2f44-4cac-ae05-2ef75153d7b2_1.0.0.0_x86__8knd62qt53bkc</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>8de48fe1-2f44-4cac-ae05-2ef75153d7b2_8knd62qt53bkc!App</RegisteredUserModeAppID>
-    <RegisteredPackageID>8de48fe1-2f44-4cac-ae05-2ef75153d7b2</RegisteredPackageID>
-    <RegisteredPackagePublisher>CN=Damian Curran</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <RegisteredManifestChecksum>7ED780721A3C4BBBD7F09FA29A4FBB7CBB462EF00DC6004C1B746C79F4BCCE8B</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>58362DamianCurran.OnlineNotes_1.1.0.0_x86__xd8gvp58bg2em</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>58362DamianCurran.OnlineNotes_xd8gvp58bg2em!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>58362DamianCurran.OnlineNotes</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=13E43DFA-5E1D-447E-84CB-0ACE7287F4F8</RegisteredPackagePublisher>
+    <RegisteredVersion>1.1.0.0</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-13T02:15:59.906</Modified>
+      <Modified>2017-12-13T15:58:58.641</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\bin\x86\Debug\Notes.exe">
       <PackagePath>entrypoint\Notes.exe</PackagePath>
-      <Modified>2017-12-13T02:15:59.240</Modified>
+      <Modified>2017-12-13T15:58:58.007</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Damian Curran\.nuget\packages\Microsoft.Azure.Mobile.Client\3.0.1\lib\netcore45\Microsoft.WindowsAzure.Mobile.Ext.dll">
       <PackagePath>Microsoft.WindowsAzure.Mobile.Ext.dll</PackagePath>
@@ -508,7 +508,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\bin\x86\Debug\Notes.xr.xml">
       <PackagePath>Notes.xr.xml</PackagePath>
-      <Modified>2017-12-13T02:15:59.121</Modified>
+      <Modified>2017-12-13T15:47:33.542</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -517,11 +517,11 @@
     <AppxPackagedFile Include="C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-13T02:15:59.678</Modified>
+      <Modified>2017-12-13T15:58:58.427</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\bin\x86\Debug\Core\Notes.exe">
       <PackagePath>Notes.exe</PackagePath>
-      <Modified>2017-12-13T02:15:59.903</Modified>
+      <Modified>2017-12-13T15:58:58.638</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
