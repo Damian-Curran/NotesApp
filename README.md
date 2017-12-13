@@ -1,5 +1,10 @@
 # NotesApp
 
+## Structure
+This app is developed using Visual Studios.
+It is an UWP(Universal Windows Platform) app.
+It is written using the MVVM design pattern,
+
 ## Link to Windows Store
 The app will be located here once published: https://www.microsoft.com/store/apps/9p2fdhvl1l7x
 
