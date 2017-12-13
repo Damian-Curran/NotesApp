@@ -27,8 +27,6 @@ namespace Notes
         public MainPage()
         {
             this.InitializeComponent();
-            NoteHandler = new NoteHandlerViewModel();
-            NoteHandler.NoteHandlerViewModel1("College");
             this.MainFrame.Navigate(typeof(NotesPage));
         }
 
@@ -41,7 +39,6 @@ namespace Notes
         {
             this.MainFrame.Navigate(typeof(Form));
         }
-
-        public NoteHandlerViewModel NoteHandler { get; set; }
+        
     }
 }

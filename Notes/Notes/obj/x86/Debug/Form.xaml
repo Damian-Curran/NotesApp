@@ -17,10 +17,11 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Column="0" Grid.Row="0" Orientation="Vertical">
-            <TextBox x:ConnectionId='2' MaxLength="30"
+            <TextBox x:ConnectionId='2' MaxLength="30" PlaceholderText="Enter Note Title"
                                                                                                
               Margin="5" />
             <TextBox x:ConnectionId='3' Name="des" HorizontalAlignment="Stretch" BorderBrush="Black" TextWrapping="Wrap" ScrollViewer.VerticalScrollMode="Enabled" ScrollViewer.VerticalScrollBarVisibility="Visible"
+                     PlaceholderText="Enter Note Contents"
                                                                                               
               Margin="5" />
         </StackPanel>

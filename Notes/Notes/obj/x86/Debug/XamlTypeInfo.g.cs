@@ -248,7 +248,6 @@ namespace Notes.Notes_XamlTypeInfo
             case 7:   //  Notes.MainPage
                 userType = new global::Notes.Notes_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_7_MainPage;
-                userType.AddMemberName("NoteHandler");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -275,22 +274,12 @@ namespace Notes.Notes_XamlTypeInfo
             var that = (global::Notes.Form)instance;
             that.NoteHandler = (global::ViewModels.NoteHandlerViewModel)Value;
         }
-        private object get_1_MainPage_NoteHandler(object instance)
-        {
-            var that = (global::Notes.MainPage)instance;
-            return that.NoteHandler;
-        }
-        private void set_1_MainPage_NoteHandler(object instance, object Value)
-        {
-            var that = (global::Notes.MainPage)instance;
-            that.NoteHandler = (global::ViewModels.NoteHandlerViewModel)Value;
-        }
-        private object get_2_NotesPage_NoteHandler(object instance)
+        private object get_1_NotesPage_NoteHandler(object instance)
         {
             var that = (global::Notes.NotesPage)instance;
             return that.NoteHandler;
         }
-        private void set_2_NotesPage_NoteHandler(object instance, object Value)
+        private void set_1_NotesPage_NoteHandler(object instance, object Value)
         {
             var that = (global::Notes.NotesPage)instance;
             that.NoteHandler = (global::ViewModels.NoteHandlerViewModel)Value;
@@ -309,17 +298,11 @@ namespace Notes.Notes_XamlTypeInfo
                 xamlMember.Getter = get_0_Form_NoteHandler;
                 xamlMember.Setter = set_0_Form_NoteHandler;
                 break;
-            case "Notes.MainPage.NoteHandler":
-                userType = (global::Notes.Notes_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Notes.MainPage");
-                xamlMember = new global::Notes.Notes_XamlTypeInfo.XamlMember(this, "NoteHandler", "ViewModels.NoteHandlerViewModel");
-                xamlMember.Getter = get_1_MainPage_NoteHandler;
-                xamlMember.Setter = set_1_MainPage_NoteHandler;
-                break;
             case "Notes.NotesPage.NoteHandler":
                 userType = (global::Notes.Notes_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Notes.NotesPage");
                 xamlMember = new global::Notes.Notes_XamlTypeInfo.XamlMember(this, "NoteHandler", "ViewModels.NoteHandlerViewModel");
-                xamlMember.Getter = get_2_NotesPage_NoteHandler;
-                xamlMember.Setter = set_2_NotesPage_NoteHandler;
+                xamlMember.Getter = get_1_NotesPage_NoteHandler;
+                xamlMember.Setter = set_1_NotesPage_NoteHandler;
                 break;
             }
             return xamlMember;

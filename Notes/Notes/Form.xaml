@@ -17,10 +17,11 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Column="0" Grid.Row="0" Orientation="Vertical">
-            <TextBox MaxLength="30"
+            <TextBox MaxLength="30" PlaceholderText="Enter Note Title"
               Text="{x:Bind NoteHandler.SelectedNote.NoteName, Mode=TwoWay, FallbackValue=''}" 
               Margin="5" />
             <TextBox Name="des" HorizontalAlignment="Stretch" BorderBrush="Black" TextWrapping="Wrap" ScrollViewer.VerticalScrollMode="Enabled" ScrollViewer.VerticalScrollBarVisibility="Visible"
+                     PlaceholderText="Enter Note Contents"
               Text="{x:Bind NoteHandler.SelectedNote.NoteDes, Mode=TwoWay, FallbackValue=''}" 
               Margin="5" />
         </StackPanel>
