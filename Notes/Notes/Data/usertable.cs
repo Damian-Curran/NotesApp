@@ -91,8 +91,8 @@ namespace Data
                     if(dupCount == 1)
                     {
                         await userTableObj.UpdateAsync(obj);
-                        MessageDialog msgDialog = new MessageDialog("Data Updated!!!");
-                        await msgDialog.ShowAsync();
+                        //MessageDialog msgDialog = new MessageDialog("Data Updated!!!");
+                        //await msgDialog.ShowAsync();
                     }
 
                     if (dupCount == 0)
@@ -100,8 +100,8 @@ namespace Data
                         try
                         {
                             await userTableObj.InsertAsync(obj);
-                            MessageDialog msgDialog = new MessageDialog("Data Inserted!!!");
-                            await msgDialog.ShowAsync();
+                            //MessageDialog msgDialog = new MessageDialog("Data Inserted!!!");
+                            //await msgDialog.ShowAsync();
                         }
 
                         catch (Exception)
@@ -124,8 +124,8 @@ namespace Data
             IMobileServiceTable<Note> userTableObj = App.MobileService.GetTable<Note>();
 
             await userTableObj.DeleteAsync(obj);
-            MessageDialog msgDialog = new MessageDialog("Data Deleted!!!");
-            await msgDialog.ShowAsync();
+            //MessageDialog msgDialog = new MessageDialog("Data Deleted!!!");
+            //await msgDialog.ShowAsync();
         }
     }
 }

@@ -1,0 +1,2 @@
+MainPackage=C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\bin\x86\Release\Upload\Notes_1.1.2.0_x86.appx
+SymbolPackage=C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\AppPackages\Notes_1.1.2.0\Notes_1.1.2.0_x86.appxsym

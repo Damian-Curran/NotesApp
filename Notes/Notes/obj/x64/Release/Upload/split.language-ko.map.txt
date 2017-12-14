@@ -1,0 +1,6 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.language-ko"
+"ResourceDimensions"		"language-ko-kr"
+
+[Files]
+"C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\obj\x64\Release\Upload\split.language-ko.pri"			"resources.pri"

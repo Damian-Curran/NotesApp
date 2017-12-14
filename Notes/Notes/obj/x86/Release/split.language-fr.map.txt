@@ -1,0 +1,6 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.language-fr"
+"ResourceDimensions"		"language-fr-fr"
+
+[Files]
+"C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\obj\x86\Release\split.language-fr.pri"			"resources.pri"

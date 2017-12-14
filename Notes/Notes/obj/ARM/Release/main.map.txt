@@ -1,0 +1,19 @@
+[ResourceMetadata]
+"ResourceDimensions"		"language-en-us"
+"ResourceDimensions"		"scale-200"
+"ResourceDimensions"		"language-en-US"
+
+[Files]
+"C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\obj\ARM\Release\split.pri"			"resources.pri"
+"C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\obj\ARM\Release\PackageLayout\Notes.exe"			"Notes.exe"
+"C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\obj\ARM\Release\PackageLayout\Notes.dll"			"Notes.dll"
+"C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\obj\ARM\Release\PackageLayout\ClrCompression.dll"			"ClrCompression.dll"
+"C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\obj\ARM\Release\PackageLayout\_Resources\index.txt"			"_Resources\index.txt"
+"C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\obj\ARM\Release\PackageLayout\_Resources\0.rsrc"			"_Resources\0.rsrc"
+"C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\obj\ARM\Release\PackageLayout\Assets\Wide310x150Logo.scale-200.png"			"Assets\Wide310x150Logo.scale-200.png"
+"C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\obj\ARM\Release\PackageLayout\Assets\StoreLogo.png"			"Assets\StoreLogo.png"
+"C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\obj\ARM\Release\PackageLayout\Assets\Square44x44Logo.targetsize-24_altform-unplated.png"			"Assets\Square44x44Logo.targetsize-24_altform-unplated.png"
+"C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\obj\ARM\Release\PackageLayout\Assets\Square44x44Logo.scale-200.png"			"Assets\Square44x44Logo.scale-200.png"
+"C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\obj\ARM\Release\PackageLayout\Assets\Square150x150Logo.scale-200.png"			"Assets\Square150x150Logo.scale-200.png"
+"C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\obj\ARM\Release\PackageLayout\Assets\SplashScreen.scale-200.png"			"Assets\SplashScreen.scale-200.png"
+"C:\Users\Damian Curran\Documents\Visual Studio 2015\Projects\Notes\Notes\obj\ARM\Release\PackageLayout\Assets\LockScreenLogo.scale-200.png"			"Assets\LockScreenLogo.scale-200.png"

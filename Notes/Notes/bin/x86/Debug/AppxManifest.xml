@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="58362DamianCurran.OnlineNotes" Publisher="CN=13E43DFA-5E1D-447E-84CB-0ACE7287F4F8" Version="1.1.0.0" ProcessorArchitecture="x86" />
+  <Identity Name="58362DamianCurran.OnlineNotes" Publisher="CN=13E43DFA-5E1D-447E-84CB-0ACE7287F4F8" Version="1.1.2.0" ProcessorArchitecture="x86" />
   <mp:PhoneIdentity PhoneProductId="8de48fe1-2f44-4cac-ae05-2ef75153d7b2" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>OnlineNotes</DisplayName>
